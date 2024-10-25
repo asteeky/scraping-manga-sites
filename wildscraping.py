@@ -4,7 +4,6 @@ import time
 import os
 import requests
 
-# Configura o driver
 def start_driver():
     options = uc.ChromeOptions()
     options.headless = False  
