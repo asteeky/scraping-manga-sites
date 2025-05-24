@@ -25,64 +25,29 @@ Script para baixar capítulos de mangá do antigo site Tsuki Mangas.
 pip install selenium beautifulsoup4 requests undetected-chromedriver
 ```
 
-# Baixador de Capítulos do Nekotoons 🐾
-Este script em Python permite baixar todas as imagens de um capítulo de mangá diretamente do site nekotoons.site, salvando-as em uma pasta local no seu computador.
+# Downloader de Capítulos de Mangá (nekotoons.site)
 
- Como Funciona
-O script:
+Este script Python foi projetado para baixar todas as imagens de um capítulo de mangá específico do site `nekotoons.site` e salvá-las em uma pasta local.
 
-Acessa a URL de um capítulo de mangá.
+## Funcionalidades
 
-Encontra todas as tags <img> que contenham imagens do conteúdo do mangá.
+* Baixa imagens de uma URL de capítulo fornecida.
+* Cria uma pasta nomeada com o identificador do capítulo (ex: `capitulo_811`) para armazenar as imagens.
+* Filtra e baixa apenas as imagens relevantes do conteúdo do mangá.
+* Salva as imagens em formato `.jpg`.
 
-Filtra apenas as imagens válidas (aquelas que possuem "uploads" no link).
+## Pré-requisitos
 
-Baixa e salva as imagens localmente com nomes como image_1.jpg, image_2.jpg, etc.
+Antes de executar o script, você precisará ter o Python instalado em seu sistema. Além disso, são necessárias as seguintes bibliotecas Python:
 
- Pré-requisitos
-Python 3.x
+* `requests`: Para fazer requisições HTTP.
+* `beautifulsoup4`: Para fazer o parsing do HTML da página.
 
-Bibliotecas Python:
+## Instalação das Dependências
 
-requests
+Você pode instalar as bibliotecas necessárias usando o pip:
 
-beautifulsoup4
-
-selenium
-
-undetected-chromedriver (se quiser adaptar para scraping com proteção)
-
-Instalação das Dependências
-bash
-Copiar
-Editar
-pip install selenium beautifulsoup4 requests undetected-chromedriver
-🛠️Como Usar
-Clone ou copie este script.
-
-Modifique as seguintes variáveis no código:
-
-python
-Copiar
-Editar
-capitulo_url = "URL do capítulo que deseja baixar"
-output_folder = os.path.join(r"coloque o diretório dos downloads", capitulo_id)
-Exemplo:
-
-python
-Copiar
-Editar
-capitulo_url = "https://nekotoons.site/manga/Lágrimas+Sobre+Flores+Murchas/capitulo_811"
-output_folder = os.path.join(r"C:\Users\SeuNome\Downloads\Mangas", capitulo_id)
-Execute o script:
-
-bash
-Copiar
-Editar
-python baixar_capitulo.py
-📂 Estrutura de Saída
-As imagens serão salvas dentro de uma pasta com o nome do capítulo (ex: capitulo_811), dentro do diretório que você especificou.
-
-⚠️ Aviso
-Este script depende da estrutura atual do site nekotoons.site Mudanças no layout ou comportamento da página podem exigir ajustes no código.
+```bash
+pip install requests beautifulsoup4
+``` 
 
