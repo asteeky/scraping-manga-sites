@@ -12,7 +12,7 @@ Script para baixar capítulos de mangá do antigo site Tsuki Mangas.
 
 ### Pré-requisitos
 
-* Python 3.9.13
+* Python 3.9.13 (tem que ser está versão ou uma inferior)
 * É necessário instalar o `undetected-chromedriver`. Você pode encontrá-lo em: [https://github.com/ultrafunkamsterdam/undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
 
 ### Bibliotecas Necessárias
