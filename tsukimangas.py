@@ -41,6 +41,5 @@ def scrape_images(url, download_folder):
 
 url = 'https://tsuki-mangas.com/leitor/60/2924/the-beginning-after-the-end/92'
 
-#Salvar aqui
 download_folder = 'C:/Users/xxx/Desktop/test'
 scrape_images(url, download_folder)
